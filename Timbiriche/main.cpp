@@ -1,0 +1,14 @@
+/*
+UNIVERSIDAD NACIONAL DE COSTA RICA
+EIF-204  -  PROGRAMACIÓN II
+ESTUDIANTES: JOEL ZAMORA Y DIEGO JIMÉNEZ
+PROFESOR: SANTIAGO CAAMAÑO POLINI
+*/
+
+#include "control.h"
+
+int main() {
+	control c;
+	c.cargar();
+	return 0;
+}

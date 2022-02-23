@@ -1,0 +1,987 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1260</x>
+      <y>170</y>
+      <w>190</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>componente
+-
++ componente()
++ virtual ~componente()
++ virtual toString() = 0: string
++ virtual getN(): int
++ virtual getM(): int
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1350</x>
+      <y>270</y>
+      <w>30</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1320</x>
+      <y>330</y>
+      <w>850</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>830.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1090</x>
+      <y>370</y>
+      <w>270</w>
+      <h>260</h>
+    </coordinates>
+    <panel_attributes>campoComposite
+-
+- tablero: componente ***
+- k : int
+-
++ campoComposite(int, int)
++ virtual ~campoComposite()
++ virtual lleno(): bool
++ virtual getN(): int
++ virtual getM(): bool
++ virtual int getT()
++ virtual setN(int): void
++ virtual setM(int): void
++ virtual draw() = 0: void
++ virtual toString() const: string
++ virtual getTablero(): componente*** 
++ virtual setTablero(componente***): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1320</x>
+      <y>330</y>
+      <w>30</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1420</x>
+      <y>330</y>
+      <w>30</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1370</x>
+      <y>380</y>
+      <w>180</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>punto
+-
++ punto()
++ virtual ~punto()
++ toString() const: string
++ virtual getN(): int
++ virtual getM(): int
+	
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1280</x>
+      <y>620</y>
+      <w>30</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;150.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1460</x>
+      <y>800</y>
+      <w>160</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>seisPuntos
+-
++ seisPuntos()
++ virtual ~seisPuntos()
++ draw(): void
++ toString() const: string
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1610</x>
+      <y>330</y>
+      <w>30</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1560</x>
+      <y>380</y>
+      <w>160</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>espacio1
+-
++ espacio1()
++ virtual ~espacio1()
++ toString() const: string
++ virtual getN(): int
++ virtual getM(): int
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1730</x>
+      <y>380</y>
+      <w>160</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>espacio2
+-
++ espacio2()
++ virtual ~espacio2()
++ toString() const: string
++ virtual getN(): int
++ virtual getM(): int
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1780</x>
+      <y>330</y>
+      <w>30</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1970</x>
+      <y>330</y>
+      <w>30</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1900</x>
+      <y>380</y>
+      <w>160</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>numero
+-
+- num: int
+-
++ numero()
++ virtual ~numero()
++ toString() const: string
++ virtual getN(): int
++ virtual getM(): int
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2080</x>
+      <y>380</y>
+      <w>170</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>linea
+-
++ linea()
++ virtual ~linea()
++ toString() const: string
++ virtual getN(): int
++ virtual getM(): int
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2140</x>
+      <y>330</y>
+      <w>30</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2140</x>
+      <y>480</y>
+      <w>30</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2020</x>
+      <y>530</y>
+      <w>260</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>240.0;50.0;240.0;10.0;10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1980</x>
+      <y>580</y>
+      <w>170</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lineaHorizontal
+-
++ lineaHorizontal()
++ virtual ~lineaHorizontal()
++ toString() const: string
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2160</x>
+      <y>580</y>
+      <w>160</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lineaVertical
+-
++ lineaVertical()
++ virtual ~lineaVertical()
++ toString() const: string
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1070</x>
+      <y>760</y>
+      <w>640</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>620.0;40.0;620.0;10.0;10.0;10.0;10.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1250</x>
+      <y>270</y>
+      <w>70</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+                                     </panel_attributes>
+    <additional_attributes>10.0;100.0;50.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>970</x>
+      <y>800</y>
+      <w>310</w>
+      <h>350</h>
+    </coordinates>
+    <panel_attributes>campoJuego
+-
+- tableros: campoComposite** 
+- k: int
+-
++ campoJuego();
++ virtual ~campoJuego();
++ getK(): int
++ lleno():bool
++ calculaMayorFilas(): int
++ comprobarGanador(): bool
++ agregarAlContenedor(campoComposite*): void
++ draw(): void
++ rellenar(bool): bool
++ partida(coordenadas*, coordenadas*): bool
++ getN(): int
++ getM(): int
++ setN(int): void
++ setM(int): void
++ getTablero(): componente*** 
++ setTablero(componente***): void
++ toString() const: string
++ archivos(): string
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1320</x>
+      <y>760</y>
+      <w>30</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1290</x>
+      <y>800</y>
+      <w>160</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>nuevePuntos
+-
++ nuevePuntos()
++ virtual ~nuevePuntos()
++ draw(): void
++ toString() const: string
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1630</x>
+      <y>800</y>
+      <w>160</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>quincePuntos
+-
++ seisPuntos()
++ virtual ~seisPuntos()
++ draw(): void
++ toString() const: string</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>550</x>
+      <y>800</y>
+      <w>370</w>
+      <h>510</h>
+    </coordinates>
+    <panel_attributes>juego
+-
+- jugadores: coleccionJugadores* 
+- jugadas: listaJugadas* 
+- tablero: campoJuego* 
+- numJuego: int 
+- player1: string 
+- player2: string 
+-
++ juego()
++ virtual ~juego()
++	getTablero(): componente*** 
++	getN(): int 
++	getM(): int 
++setJugadas(listaJugadas*): void
++	agregarAlContenedorTableros(campoComposite*):void 
++	recuperarJugada(): jugada* 
++	agregarJugador(jugador*): void 
++	agregarJugada(jugada*): void 
++	jugador1(): string 
++	jugador2(): string 
++	establecerNumJuego(int): void 
++	agregarAlContenedor(campoComposite*): void 
++	jugarVSHumano(): void 
++	jugarVSMaquina(estrategia*): void 
++	comprobarGanador(): string 
++	toString() const: string 
++	partida(coordenadas*, coordenadas*):void 
++	draw(): void 
++	rellenar(bool):bool 
++	reproducir(): void 
++	toStringJuego(): string 
++archivos(): string </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>910</x>
+      <y>800</y>
+      <w>80</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>60.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>530</x>
+      <y>370</y>
+      <w>220</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes>jugador
+-
+- string nombre: string
+- identificacion: string
+- codigo: string
+- monedas: double
+- activo: bool
+-
++ jugador(string, string)
++ virtual ~jugador()
++ update(string): void
++ toString(): string
++ obtenerNombre(): string
++ graphic(): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>90</x>
+      <y>370</y>
+      <w>390</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>jugada
+-
+- entrada: coordenadas* 
+- salida: coordenadas* 
+-
++ jugada(coordenadas*, coordenadas*)
++ virtual ~jugada()
++ obtenerEntrada(): coordenadas* 
++ obtenerSalida(): coordenadas* 
++ compararCoordenadas(coordenadas*, coordenadas*): bool 
++ archivos(): string </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>720</x>
+      <y>580</y>
+      <w>30</w>
+      <h>240</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+</panel_attributes>
+    <additional_attributes>10.0;220.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>470</x>
+      <y>520</y>
+      <w>100</w>
+      <h>300</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+</panel_attributes>
+    <additional_attributes>80.0;280.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>800</x>
+      <y>330</y>
+      <w>260</w>
+      <h>400</h>
+    </coordinates>
+    <panel_attributes>empresaDots
+-
+- suscriptores: coleccionJugadores* 
+- partidas: listaJuegos* 
+- codigo: string 
+- dia: string 
+-
++ empresaDots()
++ virtual ~empresaDots()
++ establecerPartidas(listaJuegos*): void 
++ obtenerPartida(int): juego* 
++ obtenerPartidas(): listaJuegos* 
++ agregarJuego(juego*): void 
++ attach(jugador*): bool 
++ setCodigo(): void 
++ generarCodigoAleatorio(): string 
++ notify(): void 
++ vacio(): bool 
++ minimo(): bool 
++ minimo1(): bool 
++ existenPartidas(): bool 
++ existeJugador(string): bool 
++ existeJuego(int): bool 
++ recuperarJugador(string): jugador* 
++ toString(): string 
++ toStringPartidas(): string </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>840</x>
+      <y>720</y>
+      <w>30</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+</panel_attributes>
+    <additional_attributes>10.0;80.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>740</x>
+      <y>340</y>
+      <w>80</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+</panel_attributes>
+    <additional_attributes>60.0;10.0;10.0;30.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>640</x>
+      <y>150</y>
+      <w>170</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>coordenadas
+-
+- x : int
+- y : int
+-
++ coordenadas(int, int)
++ virtual ~coordenadas()
++ getX(): int
++ getY(): int
++ archivos(): string</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>350</x>
+      <y>200</y>
+      <w>310</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>290.0;10.0;10.0;170.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>690</x>
+      <y>1380</y>
+      <w>350</w>
+      <h>250</h>
+    </coordinates>
+    <panel_attributes>estrategia
+-
+- tablero: componente*** 
+- n: int
+- m: int
+- jugadasLegales: listaLegales* 
+- jugadasILegales: listaLegales* 
+-
++ estrategia(componente***, int, int)
++ virtual ~estrategia()
++ virtual recuperarJugada() = 0: jugada* 
++ virtual establecerJugadaRival(jugada*) = 0: void
++ virtual establecerJugadaMaquina(jugada*) = 0: void
++ virtual registrarJugadasLegales() = 0: void
++ virtual registrarJugadasIlegales(): void
++ virtual haycajita(): jugada* </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>730</x>
+      <y>1300</y>
+      <w>30</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;80.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>770</x>
+      <y>1620</y>
+      <w>30</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>240</x>
+      <y>1660</y>
+      <w>1300</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>1280.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>240</x>
+      <y>1660</y>
+      <w>30</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>1700</y>
+      <w>320</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>estrategiaAleatoria
+-
++ estrategiaAleatoria(componente***, int, int)
++ virtual ~estrategiaAleatoria()
++ virtual recuperarJugada(): jugada* 
++ virtual establecerJugadaRival(jugada*): void
++ virtual establecerJugadaMaquina(jugada*): void
++ virtual registrarJugadasLegales(): void </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>400</x>
+      <y>1660</y>
+      <w>30</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>330</x>
+      <y>1700</y>
+      <w>320</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>estrategiaCercana
+-
++ estrategiaCercana(componente***, int, int)
++ virtual ~estrategiaCercana()
++ virtual recuperarJugada(): jugada* 
++ virtual establecerJugadaRival(jugada*): void
++ virtual establecerJugadaMaquina(jugada*): void
++ virtual registrarJugadasLegales(): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>810</x>
+      <y>1660</y>
+      <w>30</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>680</x>
+      <y>1700</y>
+      <w>320</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>estrategiaPeriferica
+-
++ estrategiaPeriferica(componente***, int, int)
++ virtual ~estrategiaPeriferica()
++ virtual recuperarJugada(): jugada* 
++ virtual establecerJugadaRival(jugada*): void
++ virtual establecerJugadaMaquina(jugada*): void
++ virtual registrarJugadasLegales(): void </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1200</x>
+      <y>1660</y>
+      <w>30</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1020</x>
+      <y>1700</y>
+      <w>320</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>estrategiaIslas
+-
++ estrategiaIslas(componente***, int, int)
++ virtual ~estrategiaIslas()
++ virtual recuperarJugada(): jugada* 
++ virtual establecerJugadaRival(jugada*): void
++ virtual establecerJugadaMaquina(jugada*): void
++ virtual registrarJugadasLegales(): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1510</x>
+      <y>1660</y>
+      <w>30</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1360</x>
+      <y>1700</y>
+      <w>320</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>estrategiaCentral
+-
++ estrategiaCentral(componente***, int, int)
++ virtual ~estrategiaCentral()
++ virtual recuperarJugada(): jugada* 
++ virtual establecerJugadaRival(jugada*): void
++ virtual establecerJugadaMaquina(jugada*): void
++ virtual registrarJugadasLegales(): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1040</x>
+      <y>40</y>
+      <w>190</w>
+      <h>260</h>
+    </coordinates>
+    <panel_attributes>control
+-
+- dots: empresaDots* 
+-
++ control()
++ virtual ~control();
++ cargar(): void
++ controlIniciar(): void
++ controlMenu(): void
++ controlLeer(): void
++ controlDatos(): void
++ controlModalidad(): void
++ controlVSHumano(): void
++ controlVSMaquina(): void
++ controlCambio(): void
++ controlVisualizar(): void
++ controlCerrar(): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>820</x>
+      <y>40</y>
+      <w>100</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>main</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>950</x>
+      <y>190</y>
+      <w>110</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+</panel_attributes>
+    <additional_attributes>10.0;140.0;90.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1220</x>
+      <y>100</y>
+      <w>350</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>330.0;40.0;330.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>910</x>
+      <y>40</y>
+      <w>150</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>130.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1520</x>
+      <y>760</y>
+      <w>30</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1220</x>
+      <y>50</y>
+      <w>550</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>530.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1490</x>
+      <y>140</y>
+      <w>230</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>utiles
+-
++ static imprimir(string): void 
++ static limpiar(): void 
++ static esperar(int): void 
++ static pausa(): void
++ static imprimirCaracter(char): void 
++ static leerString(): void 
++ static leerEntero(): void 
++ static leerSeleccion(int, int): void 
++ static salir(): void </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1750</x>
+      <y>0</y>
+      <w>250</w>
+      <h>320</h>
+    </coordinates>
+    <panel_attributes>interfaz
+-
++ static iniciar(): string
++ static menu(): string
++ static modalidad(): string
++ static estrategia(): string
++ static combinaciones(): string
++ static tipoTablero(int): string
++ static solicitarIdentificacion(): string
++ static solicitarIdentificacion1(): string
++ static solicitarIdentificacion2(): string
++ static minimo(): string
++ static mismoJugador(): string
++ static entradaErronea(): string
++ static solicitarNombre(): string
++ static usuarioExistente(): string
++ static correcto(): string
++ static listaLlena(): string
++ static listaVacia(): string
++ static cerrar(): string</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
